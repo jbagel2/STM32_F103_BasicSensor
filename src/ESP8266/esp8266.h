@@ -18,7 +18,7 @@
 /* ESP Config */
 #define ESP_UART USART3
 #define ESP_CHPD_PORT GPIOB
-#define ESP_CHPD_PIN GPIO_Pin_0
+#define ESP_CHPD_PIN GPIO_Pin_7
 
 
 /* ESP Public Functions */

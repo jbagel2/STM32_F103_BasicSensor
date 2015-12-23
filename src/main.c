@@ -78,19 +78,16 @@ int main(void)
 	      		lastDHT22update = Millis();
 	      		DHT22_Start_Read(&Current_DHT22_Reading, &Previous_DHT22_Reading);
 
-	      		//if(Current_DHT22_Reading.CheckSumPass == 3)
-	      		//{
-	      			//GPIOB->B = GPIO_Pin_12;
-	      		//}
-
 	      	}
 	  if(Motion_Detected)
 			{
 				GPIOC->BSRR = GPIO_Pin_13;
+				ESP_On();
 			}
 			else
 			{
 				GPIOC->BRR = GPIO_Pin_13;
+				ESP_Off();
 			}
 
 

@@ -28,9 +28,10 @@ typedef struct{
 	GPIO_TypeDef * USART_GPIO;
 	uint16_t Tx_Pin;
 	uint16_t Rx_Pin;
+	uint8_t USART_IRQn;
 }Current_USART;
 
-void USART_StartInit(USART_TypeDef *usart_num, uint32_t baud);
+Current_USART USART_StartInit(USART_TypeDef *usart_num, uint32_t baud);
 
 
 #endif /* USART_H_ */

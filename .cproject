@@ -96,9 +96,13 @@
 							<tool id="com.atollic.truestudio.exe.debug.toolchain.secoutput.1051677027" name="Other" superClass="com.atollic.truestudio.exe.debug.toolchain.secoutput"/>
 						</toolChain>
 					</folderInfo>
+					<fileInfo id="com.atollic.truestudio.exe.debug.1362973146.503517558" name="esp8266_OLD.c" rcbsApplicability="disable" resourcePath="src/ESP8266/ATFirm/esp8266_OLD.c" toolsToInvoke="com.atollic.truestudio.exe.debug.toolchain.gcc.520785609.1278496980">
+						<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.520785609.1278496980" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.520785609"/>
+					</fileInfo>
+					<fileInfo id="com.atollic.truestudio.exe.debug.1362973146.2145335183" name="esp8266_OLD.h" rcbsApplicability="disable" resourcePath="src/ESP8266/ATFirm/esp8266_OLD.h" toolsToInvoke=""/>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Libraries"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry excluding="ESP8266/ATFirm/esp8266_OLD.c|ESP8266/ATFirm/esp8266_OLD.h" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -215,5 +219,12 @@
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
-	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/BasicSensor_v1"/>
+		</configuration>
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/BasicSensor_v1"/>
+		</configuration>
+	</storageModule>
 </cproject>
